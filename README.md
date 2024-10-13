@@ -1,4 +1,4 @@
-# Illustrator Script Collection
+# Illustrator 脚本集合
 
 ## 项目简介
 
@@ -22,21 +22,31 @@
 - **批量替换文本** (`T`): 批量替换文档中的文本内容。
 - **嵌入转链接** (`X`): 将嵌入图像转为链接图像。
 
+### 创意 💡
+- **和谐排列** (`H`): 将选中的对象高效排列在指定尺寸的矩形中。
+- **随机填充** (`I`): 用小对象填充大对象。
+- **随机变换** (`R`): 随机改变选中对象的颜色、位置、大小和旋转角度。
+- **替换项目** (`E`): 用一个对象替换其他对象。
+- **故障艺术** (`G`): 创建故障艺术效果。
+
 ### 其他工具 🌟
 - **统计对象数量** (`Q`): 统计选中对象的数量。
 - **打开PDF** (`P`): 在 Illustrator 中打开 PDF 文件。
+- **快速排版** (`L`): 将选中的对象排列在指定尺寸的画板上。
+- **内联SVG转AI** (`V`): 将内联SVG代码转换为AI对象。
+- **裁剪工具** (`K`): 高级裁剪和剪切蒙版工具。
+
+### 文本工具 📝
+- **批量文本编辑** (`B`): 批量编辑多个文本框的内容。
 
 ## 安装
 
 1. 下载并解压项目文件。
 2. 将脚本文件放入 Adobe Illustrator 的脚本目录中：
    - Windows: 
-     - `C:\Program Files\Adobe\Adobe Illustrator <version>\Presets\<language>\Scripts`
-     - `<version>` 是你的 Illustrator 版本号。
-     - `<language>` 是你的 Illustrator 语言。
-     - 或 `C:\Users\<YourUsername>\AppData\Roaming\Adobe\CEP\extensions`
-     - `<YourUsername>` 是你的用户名。
-   - macOS: `/Applications/Adobe Illustrator <version>/Presets/<language>/Scripts`
+     - `C:\Program Files\Adobe\Adobe Illustrator [版本]\Presets\[语言]\Scripts`
+     - 或 `C:\Users\[用户名]\AppData\Roaming\Adobe\CEP\extensions`
+   - macOS: `/Applications/Adobe Illustrator [版本]/Presets/[语言]/Scripts`
 3. 重启 Adobe Illustrator。
 
 ## 使用方法
@@ -44,12 +54,13 @@
 1. 在 Adobe Illustrator 中打开一个文档。
 2. 选择需要操作的对象。
 3. 运行相应的脚本：
-   - 菜单栏中选择 `文件 > 脚本`，然后选择所需的脚本。
+   - 从菜单栏中选择 `文件 > 脚本`，然后选择所需的脚本。
+   - 或使用快捷键（如果已设置）。
 
 ## 贡献
 
-欢迎贡献代码！请提交 Pull Request 或报告问题。
+我们欢迎并鼓励社区贡献！如果您有改进建议或发现了问题，请提交 Pull Request 或创建 Issue。
 
 ## 许可证
 
-此项目采用 MIT 许可证。详情请参阅 LICENSE 文件。
+本项目采用 MIT 许可证。详情请参阅 LICENSE 文件。
