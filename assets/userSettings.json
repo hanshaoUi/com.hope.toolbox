@@ -1,0 +1,106 @@
+{
+    "categories": [
+        {
+            "name": "常用工具",
+            "icon": "🔧",
+            "scripts": [
+                {
+                    "name": "添加裁切标记",
+                    "file": "addCropMarks.js",
+                    "description": "在选中对象周围添加裁切标记",
+                    "shortcut": "C"
+                },
+                {
+                    "name": "按画板创建矩形",
+                    "file": "artboardRef.js",
+                    "description": "根据当前画板尺寸创建矩形",
+                    "shortcut": "R"
+                },
+                {
+                    "name": "按图形创建画板",
+                    "file": "make_artboard.js",
+                    "description": "根据选中图形创建新画板",
+                    "shortcut": "A"
+                }
+            ]
+        },
+        {
+            "name": "编号与测量",
+            "icon": "📐",
+            "scripts": [
+                {
+                    "name": "自动编号",
+                    "file": "AutoNumber.js",
+                    "description": "在选定文本对象中生成递增数字序列",
+                    "shortcut": "L"
+                },
+                {
+                    "name": "测量路径长度",
+                    "file": "measurePathLength.js",
+                    "description": "计算选中路径的总长度",
+                    "shortcut": "M"
+                },
+                {
+                    "name": "面积周长计算",
+                    "file": "make_area.js",
+                    "description": "计算选中对象的面积和周长",
+                    "shortcut": "S"
+                },
+                {
+                    "name": "尺寸标注",
+                    "file": "make_size.js",
+                    "description": "为选中对象添加尺寸标注",
+                    "shortcut": "D"
+                }
+            ]
+        },
+        {
+            "name": "图像与文本处理",
+            "icon": "🖼️",
+            "scripts": [
+                {
+                    "name": "一键嵌入图像",
+                    "file": "embedImages.js",
+                    "description": "将所有链接图像转为嵌入图像",
+                    "shortcut": "E"
+                },
+                {
+                    "name": "批量替换文本",
+                    "file": "replaceText.js",
+                    "description": "批量替换文档中的文本内容",
+                    "shortcut": "T"
+                },
+                {
+                    "name": "嵌入转链接",
+                    "file": "exportAllEmbeddedObjects.js",
+                    "description": "将嵌入图像转为链接图像",
+                    "shortcut": "X"
+                }
+            ]
+        },
+        {
+            "name": "其他工具",
+            "icon": "🌟",
+            "scripts": [
+                {
+                    "name": "统计对象数量",
+                    "file": "countSelectedObjects.js",
+                    "description": "统计选中对象的数量",
+                    "shortcut": "Q"
+                },
+                {
+                    "name": "打开PDF",
+                    "file": "openPDF.js",
+                    "description": "在Illustrator中打开PDF文件",
+                    "shortcut": "P"
+                },
+                {
+                    "name": "快速排版",
+                    "file": "quick_layout.js",
+                    "description": "将选中的对象排列在指定尺寸的画板上",
+                    "shortcut": "L"
+                }
+            ]
+        }
+    ]
+}

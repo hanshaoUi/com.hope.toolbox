@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="com.example.illustrator.plugin">
+        <HostList>
+            <Host Name="PHXS" Port="8000"/>
+            <Host Name="IDSN" Port="8001"/>
+        </HostList>
+    </Extension>
+   <Extension Id="com.example.illustrator.plugin">
+        <HostList>
+            <Host Name="PHXS" Port="8100"/>
+            <Host Name="IDSN" Port="8101"/>
+        </HostList>
+    </Extension>
+</ExtensionList>

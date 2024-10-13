@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101828;
+    color: #ecf0f1;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1C2433;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#main-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#tab-nav {
+    width: 50px; /* 减小宽度 */
+    background-color: #1C2433;
+    padding: 8px 4px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px; /* 减小图标大小 */
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+    border-radius: 50%; /* 保持按钮呈圆形 */
+    width: 40px; /* 减小按钮宽度 */
+    height: 40px; /* 减小按钮高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button:hover {
+    background-color: #34495E;
+}
+
+.tab-button.active {
+    background-color: #7D4CF0;
+}
+
+.tab-divider {
+    width: 80%;
+    border: none;
+    border-top: 1px solid #34495E;
+    margin: 10px 0;
+}
+
+#tab-content {
+    flex-grow: 1;
+    background-color: #1C2433;
+    padding: 12px; /* 稍微减小内边距 */
+    overflow-y: auto;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #7D4CF0;
+    font-size: 1em; /* 减小分类标题文字大小 */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* 减小按钮之间的间距 */
+}
+
+.button {
+    flex: 0 1 auto;
+    border: none;
+    color: white;
+    padding: 6px 10px; /* 减小按钮的内边距 */
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background-color: #7D4CF0;
+    white-space: nowrap;
+    font-size: 0.9em; /* 减小按钮文字大小 */
+    position: relative;
+}
+
+.button::after {
+    content: attr(data-shortcut);
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #1C2433;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+#search-input {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: #2C3E50;
+    color: white;
+}
+
+#version-info {
+    font-size: 0.8em;
+    color: #7D4CF0;
+}
+
+@media (max-width: 768px) {
+    #main-container {
+        flex-direction: column;
+    }
+
+    #tab-nav {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+
+    .tab-button {
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+}
+
+/* 可以根据需要添加响应式设计 */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: row;
+    }
+    
+    .button {
+        flex: 0 1 auto; /* 在小屏幕上让按钮填满容器宽度 */
+    }
+}
+
+header button {
+    background-color: #7D4CF0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+header button:hover {
+    opacity: 0.8;
+}
+
+/* ... 前面的样式保持不变 ... */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #1C2433;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.modal h2 {
+    color: #7D4CF0;
+    margin-top: 0;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-top: 10px;
+}
+
+.modal input, .modal textarea, .modal select {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #2C3E50;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.modal button {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #7D4CF0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+.close-modal {
+    background-color: #34495E !important;
+}
+
+/* ... 后面的样式保持不变 ... */
