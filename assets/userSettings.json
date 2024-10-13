@@ -79,6 +79,36 @@
             ]
         },
         {
+            "name": "创意",
+            "icon": "💡",
+            "scripts": [
+                {
+                    "name": "和谐排列",
+                    "file": "harmonizer.js",
+                    "description": "将选中的对象高效排列在指定尺寸的矩形中",
+                    "shortcut": "H"
+                },
+                {
+                    "name": "随机颜色生成器",
+                    "file": "randomColorGenerator.js",
+                    "description": "为选中对象生成随机颜色",
+                    "shortcut": "G"
+                },
+                {
+                    "name": "图形变形器",
+                    "file": "shapeDistorter.js",
+                    "description": "对选中图形进行随机变形",
+                    "shortcut": "F"
+                },
+                {
+                    "name": "随机填充",
+                    "file": "fillinger.js",
+                    "description": "用小对象填充大对象",
+                    "shortcut": "I"
+                }
+            ]
+        },
+        {
             "name": "其他工具",
             "icon": "🌟",
             "scripts": [
@@ -99,6 +129,18 @@
                     "file": "quick_layout.js",
                     "description": "将选中的对象排列在指定尺寸的画板上",
                     "shortcut": "L"
+                },
+                {
+                    "name": "内联SVG转AI",
+                    "file": "inlineSVGToAI.js",
+                    "description": "将内联SVG代码转换为AI对象",
+                    "shortcut": "V"
+                },
+                {
+                    "name": "裁剪工具",
+                    "file": "cropulka.js",
+                    "description": "高级裁剪和剪切蒙版工具",
+                    "shortcut": "K"
                 }
             ]
         }
