@@ -89,22 +89,28 @@
                     "shortcut": "H"
                 },
                 {
-                    "name": "随机颜色生成器",
-                    "file": "randomColorGenerator.js",
-                    "description": "为选中对象生成随机颜色",
-                    "shortcut": "G"
-                },
-                {
-                    "name": "图形变形器",
-                    "file": "shapeDistorter.js",
-                    "description": "对选中图形进行随机变形",
-                    "shortcut": "F"
-                },
-                {
                     "name": "随机填充",
                     "file": "fillinger.js",
                     "description": "用小对象填充大对象",
                     "shortcut": "I"
+                },
+                {
+                    "name": "随机变换",
+                    "file": "randomus.js",
+                    "description": "随机改变选中对象的颜色、位置、大小和旋转角度",
+                    "shortcut": "R"
+                },
+                {
+                    "name": "替换项目",
+                    "file": "replaceItems.js",
+                    "description": "用一个对象替换其他对象",
+                    "shortcut": "E"
+                },
+                {
+                    "name": "故障艺术",
+                    "file": "rich_glitch.js",
+                    "description": "创建故障艺术效果",
+                    "shortcut": "G"
                 }
             ]
         },
@@ -141,6 +147,18 @@
                     "file": "cropulka.js",
                     "description": "高级裁剪和剪切蒙版工具",
                     "shortcut": "K"
+                }
+            ]
+        },
+        {
+            "name": "文本工具",
+            "icon": "📝",
+            "scripts": [
+                {
+                    "name": "批量文本编辑",
+                    "file": "batchTextEdit.js",
+                    "description": "批量编辑多个文本框的内容",
+                    "shortcut": "B"
                 }
             ]
         }
