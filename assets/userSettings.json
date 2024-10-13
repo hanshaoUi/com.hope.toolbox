@@ -111,7 +111,13 @@
                     "file": "rich_glitch.js",
                     "description": "创建故障艺术效果",
                     "shortcut": "G"
-                }
+                },
+                {
+                    "name": "弧形扭曲器",
+                    "file": "arcTwister.js",
+                    "description": "对选中对象的控制手柄进行扭曲",
+                    "shortcut": "T"
+                  }
             ]
         },
         {
@@ -147,6 +153,29 @@
                     "file": "cropulka.js",
                     "description": "高级裁剪和剪切蒙版工具",
                     "shortcut": "K"
+                },
+                {
+                    "name": "外接圆",
+                    "file": "Circumcircle.js",
+                    "description": "为选中对象创建外接圆",
+                    "shortcut": "C"
+                },
+                {
+                    "name": "合并锚点",
+                    "file": "mergeAnchorPoints.js",
+                    "description": "合并选中对象的锚点",
+                    "shortcut": "M"
+                },{
+                    "name": "融球",
+                    "file": "metaball.js",
+                    "description": "创建融球效果",
+                    "shortcut": "B"
+                },
+                {
+                    "name": "重新排列对象",
+                    "file": "rearrangeObjects.js",
+                    "description": "重新排列选中对象",
+                    "shortcut": "R"
                 }
             ]
         },
@@ -157,6 +186,12 @@
                 {
                     "name": "批量文本编辑",
                     "file": "batchTextEdit.js",
+                    "description": "批量编辑多个文本框的内容",
+                    "shortcut": "B"
+                },
+                {
+                    "name": "ceshi",
+                    "file": "ceshi.js",
                     "description": "批量编辑多个文本框的内容",
                     "shortcut": "B"
                 }
