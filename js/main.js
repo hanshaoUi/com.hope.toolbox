@@ -181,27 +181,61 @@ function checkVersion() {
 }
 
 function setupShortcuts() {
+    var csInterface = new CSInterface();
     var gExtensionId = csInterface.getExtensionID();
+    
+    // 先清除所有之前的事件监听
+    csInterface.removeEventListener("com.adobe.csxs.events.keydown");
+    
+    // 收集所有快捷键
+    var allShortcuts = [];
     
     allScripts.forEach(script => {
         if (script.shortcut) {
-            var shortcutId = script.file + "_shortcut";
-            csInterface.registerKeyEventsInterest(JSON.stringify([{
-                "keyCode": script.shortcut.charCodeAt(0),
+            // 收集快捷键信息
+            allShortcuts.push({
+                keyCode: script.shortcut.toUpperCase().charCodeAt(0),
+                script: script.file
+            });
+        }
+    });
+    
+    // 注册对所有按键的兴趣
+    if (allShortcuts.length > 0) {
+        // 为所有字母键注册兴趣
+        var keyCodes = [];
+        for (var i = 65; i <= 90; i++) { // A-Z的ASCII码
+            keyCodes.push({
+                "keyCode": i,
                 "ctrlKey": false,
                 "altKey": false,
                 "shiftKey": false,
                 "metaKey": false
-            }]));
-            
-            csInterface.addEventListener("com.adobe.csxs.events.keydown", function(event) {
-                var data = JSON.parse(event.data);
-                if (String.fromCharCode(data.keyCode) === script.shortcut) {
-                    runScript(script.file);
-                }
             });
         }
-    });
+        csInterface.registerKeyEventsInterest(JSON.stringify(keyCodes));
+        
+        // 添加单个事件监听器处理所有快捷键
+        csInterface.addEventListener("com.adobe.csxs.events.keydown", function(event) {
+            try {
+                var data = JSON.parse(event.data);
+                var pressedKey = data.keyCode;
+                
+                // 检查是否有匹配的快捷键
+                for (var i = 0; i < allShortcuts.length; i++) {
+                    if (allShortcuts[i].keyCode === pressedKey) {
+                        console.log("快捷键触发: " + String.fromCharCode(pressedKey));
+                        runScript(allShortcuts[i].script);
+                        break;
+                    }
+                }
+            } catch (e) {
+                console.error("处理快捷键时出错: " + e);
+            }
+        });
+        
+        console.log("已注册 " + allShortcuts.length + " 个快捷键");
+    }
 }
 
 function checkAndLoadUserSettings() {

@@ -1,6 +1,78 @@
 {
     "categories": [
         {
+            "name": "快捷操作",
+            "icon": "⚡",
+            "scripts": [
+                {
+                    "name": "一键转曲",
+                    "file": "convertToOutlines.js",
+                    "description": "将文本和对象转换为轮廓/曲线",
+                    "shortcut": "O"
+                },
+                {
+                    "name": "水平分布间距0",
+                    "file": "alignHorizontalDistributeZero.js",
+                    "description": "将选中对象水平平均分布并对齐到关键对象，间距为0",
+                    "shortcut": "H"
+                },
+                {
+                    "name": "垂直分布间距0",
+                    "file": "alignVerticalDistributeZero.js",
+                    "description": "将选中对象垂直平均分布并对齐到关键对象，间距为0",
+                    "shortcut": "J"
+                },
+                {
+                    "name": "逆时针旋转90°",
+                    "file": "rotateCounterClockwise90.js",
+                    "description": "将选中对象逆时针旋转90度",
+                    "shortcut": "Q"
+                },
+                {
+                    "name": "顺时针旋转90°",
+                    "file": "rotateClockwise90.js",
+                    "description": "将选中对象顺时针旋转90度",
+                    "shortcut": "W"
+                },
+                {
+                    "name": "水平翻转",
+                    "file": "flipHorizontal.js",
+                    "description": "水平翻转选中对象",
+                    "shortcut": "F"
+                },
+                {
+                    "name": "垂直翻转",
+                    "file": "flipVertical.js",
+                    "description": "垂直翻转选中对象",
+                    "shortcut": "V"
+                },
+                {
+                    "name": "居中对齐",
+                    "file": "alignCenter.js",
+                    "description": "将选中对象在当前画板中居中对齐",
+                    "shortcut": "Z"
+                },
+                {
+                    "name": "锁定对象",
+                    "file": "lockObjects.js",
+                    "description": "锁定选中的对象",
+                    "shortcut": "L"
+                },
+                {
+                    "name": "解锁所有对象",
+                    "file": "unlockAllObjects.js",
+                    "description": "解锁文档中所有已锁定的对象",
+                    "shortcut": "U"
+                },
+                {
+                    "name": "扩展外观",
+                    "file": "expandAppearance.js",
+                    "description": "扩展选中对象的外观（效果、描边等）",
+                    "shortcut": "E"
+                }
+            ]
+        },
+        {
             "name": "常用工具",
             "icon": "🔧",
             "scripts": [
@@ -21,6 +93,12 @@
                     "file": "make_artboard.js",
                     "description": "根据选中图形创建新画板",
                     "shortcut": "A"
+                },
+                {
+                    "name": "批量重命名画板",
+                    "file": "batchRenameArtboards.js",
+                    "description": "批量修改画板名称、添加前缀、后缀和尺寸信息",
+                    "shortcut": "N"
                 }
             ]
         },
@@ -51,6 +129,12 @@
                     "file": "make_size.js",
                     "description": "为选中对象添加尺寸标注",
                     "shortcut": "D"
+                },
+                {
+                    "name": "简易物料排版(bate)",
+                    "file": "materialNesting.js",
+                    "description": "将选中元素排列在指定尺寸的板材上，超出则自动创建新画板",
+                    "shortcut": "M"
                 }
             ]
         },
@@ -176,6 +260,12 @@
                     "file": "rearrangeObjects.js",
                     "description": "重新排列选中对象",
                     "shortcut": "R"
+                },
+                {
+                    "name": "批量重命名画板",
+                    "file": "batchRenameArtboards.js",
+                    "description": "批量修改画板名称、添加前缀、后缀和尺寸信息",
+                    "shortcut": "N"
                 }
             ]
         },
@@ -188,13 +278,8 @@
                     "file": "batchTextEdit.js",
                     "description": "批量编辑多个文本框的内容",
                     "shortcut": "B"
-                },
-                {
-                    "name": "ceshi",
-                    "file": "ceshi.js",
-                    "description": "批量编辑多个文本框的内容",
-                    "shortcut": "B"
                 }
+                
             ]
         }
     ]
