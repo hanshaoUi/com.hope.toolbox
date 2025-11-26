@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HOPE 工具箱</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>加载中...</p>
+    </div>
+
+    <div id="app" style="display: none;">
+        <header>
+            <div class="branding">
+                <h1>HOPE</h1>
+            </div>
+            <div class="header-content">
+                <h2>工具箱</h2>
+                <p class="subtitle">Adobe Illustrator 插件</p>
+            </div>
+            <div class="header-controls">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索工具...">
+                </div>
+            </div>
+        </header>
+        <div id="main-container">
+            <nav id="category-nav"></nav>
+            <main id="content-area"></main>
+        </div>
+        <footer>
+            <p>&copy; 2023 HOPE 内部软件 <span id="version-info">v1.0.0</span></p>
+            <div class="footer-links">
+                <a href="#" id="about-link">关于</a>
+                <a href="#" id="help-link">帮助</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 关于对话框 -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2>关于 HOPE 工具箱</h2>
+            <p>版本：1.0.0</p>
+            <p>适用于 Adobe Illustrator 的实用工具集合</p>
+            <p>集成高频工作流脚本：对齐、布局、测量、文本与图像处理、创意效果等</p>
+        </div>
+    </div>
+
+    <script src="js/CSInterface.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Vulcan.js"></script>
+</body>
+</html>

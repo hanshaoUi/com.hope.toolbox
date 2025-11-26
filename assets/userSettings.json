@@ -1,0 +1,322 @@
+{
+    "categories": [
+        {
+            "name": "快捷操作",
+            "icon": "⚡",
+            "scripts": [
+                {
+                    "name": "一键转曲",
+                    "file": "convertToOutlines.js",
+                    "description": "将文本和对象转换为轮廓/曲线",
+                    "shortcut": "O"
+                },
+                {
+                    "name": "水平分布间距0",
+                    "file": "alignHorizontalDistributeZero.js",
+                    "description": "将选中对象水平平均分布并对齐到关键对象，间距为0",
+                    "shortcut": "H"
+                },
+                {
+                    "name": "垂直分布间距0",
+                    "file": "alignVerticalDistributeZero.js",
+                    "description": "将选中对象垂直平均分布并对齐到关键对象，间距为0",
+                    "shortcut": "J"
+                },
+                {
+                    "name": "逆时针旋转90°",
+                    "file": "rotateCounterClockwise90.js",
+                    "description": "将选中对象逆时针旋转90度",
+                    "shortcut": "Q"
+                },
+                {
+                    "name": "顺时针旋转90°",
+                    "file": "rotateClockwise90.js",
+                    "description": "将选中对象顺时针旋转90度",
+                    "shortcut": "W"
+                },
+                {
+                    "name": "水平翻转",
+                    "file": "flipHorizontal.js",
+                    "description": "水平翻转选中对象",
+                    "shortcut": "F"
+                },
+                {
+                    "name": "垂直翻转",
+                    "file": "flipVertical.js",
+                    "description": "垂直翻转选中对象",
+                    "shortcut": "V"
+                },
+                {
+                    "name": "居中对齐",
+                    "file": "alignCenter.js",
+                    "description": "将选中对象在当前画板中居中对齐",
+                    "shortcut": "Z"
+                },
+                {
+                    "name": "锁定对象",
+                    "file": "lockObjects.js",
+                    "description": "锁定选中的对象",
+                    "shortcut": "L"
+                },
+                {
+                    "name": "解锁所有对象",
+                    "file": "unlockAllObjects.js",
+                    "description": "解锁文档中所有已锁定的对象",
+                    "shortcut": "U"
+                },
+                {
+                    "name": "扩展外观",
+                    "file": "expandAppearance.js",
+                    "description": "扩展选中对象的外观（效果、描边等）",
+                    "shortcut": "E"
+                }
+            ]
+        },
+        {
+            "name": "画板工具",
+            "icon": "📋",
+            "scripts": [
+                {
+                    "name": "按画板创建矩形",
+                    "file": "artboardRef.js",
+                    "description": "根据当前画板尺寸创建矩形",
+                    "shortcut": "1"
+                },
+                {
+                    "name": "按图形创建画板",
+                    "file": "make_artboard.js",
+                    "description": "根据选中图形创建新画板",
+                    "shortcut": "2"
+                },
+                {
+                    "name": "批量重命名画板",
+                    "file": "batchRenameArtboards.js",
+                    "description": "批量修改画板名称、添加前缀、后缀和尺寸信息",
+                    "shortcut": "3"
+                },
+                {
+                    "name": "显示画板名称",
+                    "file": "showArtboardName.js",
+                    "description": "显示画板名称和尺寸",
+                    "shortcut": "4"
+                },
+                {
+                    "name": "导出PDF",
+                    "file": "exportAsPDF.js",
+                    "description": "导出当前画板为PDF",
+                    "shortcut": "5"
+                },
+                {
+                    "name": "导出PLT",
+                    "file": "exportAsPLT.js",
+                    "description": "导出为PLT绘图仪格式（HPGL）",
+                    "shortcut": ""
+                }
+            ]
+        },
+        {
+            "name": "排列与布局",
+            "icon": "📐",
+            "scripts": [
+                {
+                    "name": "等比缩放到指定尺寸",
+                    "file": "resizeToExactSize.js",
+                    "description": "对话框操作，支持按尺寸（约束宽/高）或按比例缩放",
+                    "shortcut": ""
+                },
+                {
+                    "name": "重复排列",
+                    "file": "RepeatAfterMe.js",
+                    "description": "重复选中对象，支持预设和自定义",
+                    "shortcut": "R"
+                },
+                {
+                    "name": "添加裁切标记",
+                    "file": "addCropMarks.js",
+                    "description": "在选中对象周围添加裁切标记",
+                    "shortcut": "C"
+                },
+                {
+                    "name": "快速排版",
+                    "file": "quick_layout.js",
+                    "description": "将选中的对象排列在指定尺寸的画板上",
+                    "shortcut": "Y"
+                },
+                {
+                    "name": "和谐排列",
+                    "file": "harmonizer.js",
+                    "description": "将选中的对象高效排列在指定尺寸的矩形中",
+                    "shortcut": "6"
+                },
+                {
+                    "name": "简易物料排版",
+                    "file": "materialNesting.js",
+                    "description": "将选中元素排列在指定尺寸的板材上，超出则自动创建新画板",
+                    "shortcut": "7"
+                },
+                {
+                    "name": "重新排列对象",
+                    "file": "rearrangeObjects.js",
+                    "description": "重新排列选中对象",
+                    "shortcut": "8"
+                }
+            ]
+        },
+        {
+            "name": "测量与标注",
+            "icon": "📏",
+            "scripts": [
+                {
+                    "name": "快速标注尺寸",
+                    "file": "quickDimension.js",
+                    "description": "在选中对象左上角添加尺寸标注，使用文档默认单位",
+                    "shortcut": "D"
+                },
+                {
+                    "name": "测量路径长度",
+                    "file": "measurePathLength.js",
+                    "description": "计算选中路径的总长度",
+                    "shortcut": "M"
+                },
+                {
+                    "name": "面积周长计算",
+                    "file": "make_area.js",
+                    "description": "计算选中对象的面积和周长",
+                    "shortcut": "S"
+                },
+                {
+                    "name": "尺寸标注",
+                    "file": "make_size.js",
+                    "description": "为选中对象添加尺寸标注",
+                    "shortcut": "X"
+                },
+                {
+                    "name": "统计对象数量",
+                    "file": "countSelectedObjects.js",
+                    "description": "统计选中对象的数量",
+                    "shortcut": "9"
+                }
+            ]
+        },
+        {
+            "name": "文本工具",
+            "icon": "📝",
+            "scripts": [
+                {
+                    "name": "批量文本编辑",
+                    "file": "batchTextEdit.js",
+                    "description": "批量编辑文本对象",
+                    "shortcut": "B"
+                },
+                {
+                    "name": "批量替换文本",
+                    "file": "replaceText.js",
+                    "description": "批量替换文本内容",
+                    "shortcut": "T"
+                },
+                {
+                    "name": "自动编号",
+                    "file": "AutoNumber.js",
+                    "description": "为选中对象自动添加编号",
+                    "shortcut": "N"
+                }
+            ]
+        },
+        {
+            "name": "图像处理",
+            "icon": "🖼️",
+            "scripts": [
+                {
+                    "name": "一键嵌入图像",
+                    "file": "embedImages.js",
+                    "description": "将链接图像转为嵌入",
+                    "shortcut": "I"
+                },
+                {
+                    "name": "内联SVG转AI",
+                    "file": "inlineSVGToAI.js",
+                    "description": "将内联SVG转换为AI对象",
+                    "shortcut": "0"
+                },
+                {
+                    "name": "打开PDF",
+                    "file": "openPDF.js",
+                    "description": "打开PDF文件",
+                    "shortcut": "P"
+                },
+                {
+                    "name": "查找相近专色",
+                    "file": "findNearestSpotColor.js",
+                    "description": "从选中对象提取颜色，在4594个专色中查找最相近的专色（PANTONE/RAL/NIPPON）",
+                    "shortcut": ""
+                },
+                {
+                    "name": "批量转换为专色",
+                    "file": "batchConvertToSpotColor.js",
+                    "description": "扫描文档中所有颜色，批量转换为最接近的专色（支持色库筛选）",
+                    "shortcut": ""
+                },
+                {
+                    "name": "导出专色清单",
+                    "file": "exportSpotColorList.js",
+                    "description": "生成文档中所有专色的详细清单，用于印刷报价和存档",
+                    "shortcut": ""
+                }
+            ]
+        },
+        {
+            "name": "创意效果",
+            "icon": "✨",
+            "scripts": [
+                {
+                    "name": "随机填充",
+                    "file": "fillinger.js",
+                    "description": "随机填充颜色",
+                    "shortcut": ""
+                },
+                {
+                    "name": "随机化对象",
+                    "file": "randomus.js",
+                    "description": "随机化对象属性",
+                    "shortcut": ""
+                },
+                {
+                    "name": "替换项目",
+                    "file": "replaceItems.js",
+                    "description": "批量替换项目",
+                    "shortcut": ""
+                },
+                {
+                    "name": "故障艺术",
+                    "file": "rich_glitch.js",
+                    "description": "生成故障艺术效果",
+                    "shortcut": "G"
+                },
+                {
+                    "name": "元球效果",
+                    "file": "metaball.js",
+                    "description": "生成元球混合效果",
+                    "shortcut": ""
+                },
+                {
+                    "name": "弧形扭曲",
+                    "file": "arcTwister.js",
+                    "description": "弧形扭曲变形",
+                    "shortcut": "A"
+                },
+                {
+                    "name": "外接圆",
+                    "file": "Circumcircle.js",
+                    "description": "生成多边形外接圆",
+                    "shortcut": ""
+                },
+                {
+                    "name": "裁剪工具",
+                    "file": "cropulka.js",
+                    "description": "裁剪对象",
+                    "shortcut": "K"
+                }
+            ]
+        }
+    ]
+}
