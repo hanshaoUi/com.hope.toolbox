@@ -1,6 +1,22 @@
 # HOPE 工具箱（Adobe Illustrator CEP 扩展）
 
-适用于 Adobe Illustrator 的实用面板，集成高频工作流脚本：对齐、布局、测量、文本与图像处理、创意效果等，开箱即用，支持自定义分类与快捷键。
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/hanshaoUi/com.hope.toolbox)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey.svg)](https://github.com/hanshaoUi/com.hope.toolbox)
+[![Illustrator](https://img.shields.io/badge/Illustrator-CC%202013%2B-FF9A00.svg)](https://www.adobe.com/products/illustrator.html)
+[![License](https://img.shields.io/badge/license-Internal-green.svg)](https://github.com/hanshaoUi/com.hope.toolbox)
+
+> 适用于 Adobe Illustrator 的专业工具箱，集成 60+ 高频工作流脚本：对齐、布局、测量、文本与图像处理、专色管理、创意效果等，开箱即用，支持自定义分类与快捷键。
+
+## ✨ 核心特性
+
+- 🚀 **60+ 实用工具** - 覆盖印刷设计全流程
+- ⚡ **快捷键支持** - 单键触发，提升工作效率
+- 🎨 **专色处理套件** - 4594 个专色库（PANTONE/RAL/NIPPON），智能匹配
+- 📐 **等比缩放工具** - 精确控制尺寸和比例
+- 🔄 **自动记录** - 最近使用工具快速访问（最多 10 个）
+- 🎯 **动态加载** - 从配置文件读取，易于扩展和自定义
+- 📝 **详细日志** - 内置日志系统，方便调试和错误追踪
+- 🎨 **现代界面** - 深色主题，响应式设计
 
 ## 项目信息
 
@@ -8,22 +24,15 @@
 - **扩展 ID**：`com.hope.toolbox.panel`
 - **面板名称**：`HOPE 工具箱`
 - **支持主机**：Illustrator (`ILST`，版本 ≥ 17.0 / CC 2013+)
+- **当前版本**：v1.1.0
 
-## 核心特性
-
-- ⚡ **动态加载**：从 `assets/userSettings.json` 读取工具与分类，无需修改 HTML
-- 🕒 **最近使用**：自动记录常用工具，快速访问（最多 10 个）
-- ⌨️ **快捷键支持**：单键触发工具，无需鼠标点击
-- 📝 **详细日志**：内置日志系统，方便调试和错误追踪
-- 🎨 **现代界面**：深色主题，响应式设计
-
-## 兼容性
+## 🎯 兼容性
 
 - Windows / macOS
 - Illustrator 17.0+（CC 2013 及以上）
 - 需要启用 CEP 调试模式
 
-## 安装步骤
+## 📦 安装步骤
 
 ### 1. 复制扩展文件
 
@@ -56,7 +65,7 @@ defaults write com.adobe.CSXS.11 PlayerDebugMode 1
 
 重启后在菜单栏选择：`窗口 > 扩展 > HOPE 工具箱`
 
-## 使用说明
+## 📖 使用说明
 
 1. **打开面板**：Illustrator 菜单栏 → 窗口 → 扩展 → HOPE 工具箱
 2. **选择工具**：
@@ -66,7 +75,7 @@ defaults write com.adobe.CSXS.11 PlayerDebugMode 1
 4. **查看最近使用**：点击顶部时钟图标 🕒
 5. **搜索工具**：使用顶部搜索框快速定位
 
-## 工具列表（按分类）
+## 🛠️ 工具列表（按分类）
 
 ### ⚡ 快捷操作
 | 工具 | 快捷键 | 说明 |
@@ -235,7 +244,7 @@ HOPE工具箱提供了一套完整的专色处理解决方案，覆盖从查找�
 - **批量处理**：支持大型文档的批量转换
 - **详细统计**：完整的使用次数和颜色信息
 
-## 自定义配置
+## ⚙️ 自定义配置
 
 编辑 `assets/userSettings.json` 可以：
 - 添加/删除工具
@@ -245,7 +254,7 @@ HOPE工具箱提供了一套完整的专色处理解决方案，覆盖从查找�
 
 修改后保存文件，面板会在 5 秒内自动刷新。
 
-## 调试方法
+## 🔧 调试方法
 
 ### 查看浏览器控制台：
 1. 在 Illustrator 中打开面板
@@ -258,7 +267,7 @@ HOPE工具箱提供了一套完整的专色处理解决方案，覆盖从查找�
 JSON.parse(localStorage.getItem('debugLogs'))
 ```
 
-## 常见问题
+## ❓ 常见问题
 
 **Q: 工具点击没反应？**
 - 确保 Illustrator 中有打开的文档
@@ -274,7 +283,7 @@ JSON.parse(localStorage.getItem('debugLogs'))
 - 检查扩展文件夹路径是否正确
 - 重启 Illustrator
 
-## 项目结构
+## 📂 项目结构
 
 ```
 com.hope.toolbox/
@@ -295,7 +304,7 @@ com.hope.toolbox/
 └── README.md                  # 本文档
 ```
 
-## 开发贡献
+## 🤝 开发贡献
 
 欢迎提交 Issue 和 Pull Request！
 
@@ -305,7 +314,7 @@ com.hope.toolbox/
 3. 更新 `userSettings.json` 配置
 4. 测试后再提交
 
-## 版本历史
+## 📝 版本历史
 
 ### v1.1.0（当前版本）
 - ✅ 核心功能实现
@@ -325,10 +334,25 @@ com.hope.toolbox/
 ### v1.0.0
 - ✅ 初始版本发布
 
-## 许可证
+## 📄 许可证
 
 内部工具，仅供 HOPE 团队使用。
 
 ---
 
-**技术支持**：如遇问题，请查看浏览器控制台日志或联系开发团队。
+## 💬 技术支持
+
+如遇问题，请：
+1. 查看浏览器控制台日志
+2. 提交 [Issue](https://github.com/hanshaoUi/com.hope.toolbox/issues)
+3. 联系开发团队
+
+---
+
+<div align="center">
+
+**Made with ❤️ by HOPE Team**
+
+[⬆ 回到顶部](#hope-工具箱adobe-illustrator-cep-扩展)
+
+</div>
